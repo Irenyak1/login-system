@@ -1,16 +1,16 @@
-/* Styles for the body of the registration form */
+/* Styling the body of the registration form, login form and the home page */
 body{
-    background-color: aquamarine;
+    background-color: rgb(62, 161, 128);
     margin: 0%;
 }
-/* Styles for the major container that surrounds the registration form */
+/* Styling the major container that surrounds the registration form with the class container*/
 .container{ 
     width: 40%;
     margin: 20px auto; 
     padding: 20px;
     background-color: white;
 }
-/* Styles for all the labels in the file*/
+/* Styling all the labels in the file*/
  label{
     display:inline-block;
     text-align: right;
@@ -18,7 +18,7 @@ body{
     margin:5px;
 
 }
-/* Styles for all the major input fields in the form */
+/* Styling all the major input fields in the form with the ids listed below*/
 #userId, #passw, #nme, #addre, #mail, #zip, #selector{
   width: 200px;
   border: 1px solid rgb(122, 122, 139);
@@ -28,35 +28,29 @@ body{
   border-radius: 3px;
 
 }
-/* Styles for country selector */
+/* Styling the country selector using its id*/
 #selector{
   background-color: white;
   height: 25px;
 }
-/* Styles for the about section to write notes*/
+/* Styling the label for textbox*/
 label[for="textBox"]{
   vertical-align: top;
 }
-
+/* Styling the input for about using its id, notes */
 #notes{
   width: 370px;
   border-radius: 3px;
 }
 
-/* Styles for the submit button */
+/* Styling the submit button using its id*/
 #submt{
   margin-left: 40%;
   margin-top: 20px;
   width: 75px;
   font-size: 18px;
 }
-.main{
-  border: 1px solid black;
-  margin: 0 auto;
-  height: 60%;
-  width: 40%;
-  margin-top: 40px;
-}
+
 .login-form {
   width: 300px;
   margin: 0 auto;

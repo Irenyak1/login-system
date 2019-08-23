@@ -13,20 +13,23 @@
 <body>
     <div class="container">
         <h1>Registration Form</h1>
-        <form class="myForm" id="the-form" action="userdetails" method="POST">           
+        <form class="myForm" id="the-form" action="#">           
             <div class="myForm">
                 <label for="userId">User id:</label>
-                <input id="userId" type="text" name="userId">
+                <input id="userId" type="text" name="user-id">
+                <span class="message"></span>
             </div>
 
             <div class="myForm">
                 <label for="passw">Password:</label>
                 <input id="passw" type="password" name="password">
+                <span class="message"></span>
             </div>
 
             <div class="myForm">
                 <label for="nme">Name:</label>
                 <input id="nme" type="text" name="nam">
+                <span class="message"></span>
             </div>
 
             <div class="myForm">
@@ -36,37 +39,42 @@
 
             <div class="myForm" id="mySelect">
                 <label for="selct">Country:</label>
-                <select id="selector" name="myselect" class="required">
-                    <option value="0" id="selct">(Please select a country)</option>
-                    <option value="1" id="selct">Uganda</option>
-                    <option value="2" id="selct">Kenya</option>
+                <select id="selector" name="myselect">
+                    <option value="0" id="selct" name="select">(Please select a country)</option>
+                    <option value="1" id="selct" name="select">Uganda</option>
+                    <option value="2" id="selct" name="select">Kenya</option>
                 </select>
+                <span class="message"></span>
             </div>
 
             <div class="myForm">
                 <label for="zip">ZIP Code:</label>
                 <input id="zip" type="text" name="zipCode">
+                <span class="message"></span>
             </div>
 
             <div class="myForm">
                 <label for="mail">Email:</label>
                 <input id="mail" type="email" name="email">
+                <span class="message"></span>
             </div>
 
             <!-- Radio buttons for a user to select either male or f
                 emale during registration -->
             <div class="mychoice">
                 <label for="choice">Sex:</label>
-                <input id="man" type="radio" name="myRadios" value="Male" required/>Male
-                <input id="man"  type="radio" name="myRadios" value="Female"/>Female
+                <input id="mal" type="radio" name="myRadios" value="Male"/>Male
+                <input id="femal"  type="radio" name="myRadios" value="Female"/>Female
+                <span class="message"></span>
             </div>
 
-            <!-- Check boxes for a user to select where they use 
+            <!-- Check boxes for a user to select whether they use 
                 English or non English -->
             <div class="mychoice" required>
                 <label for="check">Language:</label>
-                <input type="checkbox" name="myChecks" value="english">English
-                <input type="checkbox" name="myChecks" value="non english">Non English
+                <input id="eng" type="checkbox" name="myChecks" value="english">English
+                <input id="non-eng" type="checkbox" name="myChecks" value="non english">Non English
+                <span class="message"></span>
             </div>
 
             <!-- Text box for a user to any comments or notes of their choice -->

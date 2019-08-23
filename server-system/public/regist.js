@@ -15,7 +15,7 @@ const validate = () => {
         e.preventDefault();
 
         if (idregex.test(myId.value) == false) {
-            myId.style.border = "1px solid red";
+            myId.style.border = "1px solid yellow";
             IdValid = false;
         } else {
             myId.style.border = "1px solid green";
@@ -25,13 +25,13 @@ const validate = () => {
 
     //Validating password to make sure it is between 7 to 12 characters.
     const pass = document.getElementById("passw");
-    passregex = /^\w{7,12}$/;
+    let passregex = /^\w{7,12}$/;
     let passValid = false;
     pass.addEventListener("input", e => {
         e.preventDefault();
 
-        if (passregex.test(pass) == false) {
-            pass.style.border = "1px solid red";
+        if (passregex.test(pass.value) == false) {
+            pass.style.border = "1px solid yellow";
             passValid = false;
         } else {
             pass.style.border = "1px solid green";
@@ -50,21 +50,20 @@ const validate = () => {
             nam.style.border = "1px solid green";
             namVal = true;
         } else {
-            nam.style.border = "1px solid red";
+            nam.style.border = "1px solid yellow";
             namVal = false;
         }
     });
 
     //Validating country selection making sure one country is selected.
     const selects = document.getElementById("selector");
-    // const sel = document.getElementById("selct");
     let selectValid = false;
     selects.addEventListener("input", () => {
         if (selects.value) {
             selects.style.border = "1px solid green";
             selectValid = true;
         } else {
-            selects.style.border = "1px solid red";
+            selects.style.border = "1px solid yellow";
             selectValid = false;
         }
     });
@@ -80,7 +79,7 @@ const validate = () => {
             myZip.style.border = "1px solid green";
             zipVal = true;
         } else {
-            myZip.style.border = "1px solid red";
+            myZip.style.border = "1px solid yellow";
             zipVal = false;
         }
     });
@@ -93,7 +92,7 @@ const validate = () => {
         e.preventDefault();
 
         if (emailregex.test(myMail.value) == false) {
-            myMail.style.border = "1px solid red";
+            myMail.style.border = "1px solid yellow";
             emailValid = false;
         } else {
             myMail.style.border = "1px solid green";
@@ -135,6 +134,7 @@ const validate = () => {
         e.preventDefault();
 
         if (IdValid == false) {
+            myId.style.border = "1px solid red";
             document.getElementsByClassName("message")[0].innerHTML =
                 "Required and must be of length 5 to 12.";
             document.getElementsByClassName("message")[0].style =
@@ -144,6 +144,7 @@ const validate = () => {
         }
 
         if (passValid == false) {
+            pass.style.border = "1px solid red";
             document.getElementsByClassName("message")[1].innerHTML =
                 "Required and must be of length 7 to 12.";
             document.getElementsByClassName("message")[1].style =
@@ -153,6 +154,7 @@ const validate = () => {
         }
 
         if (namVal == false) {
+            nam.style.border = "1px solid red";
             document.getElementsByClassName("message")[2].innerHTML =
                 "Required and alphabetes only.";
             document.getElementsByClassName("message")[2].style =
@@ -162,6 +164,7 @@ const validate = () => {
         }
 
         if (selectValid == false) {
+            selects.style.border = "1px solid red";
             document.getElementsByClassName("message")[3].innerHTML =
                 "Required.Must select a country.";
             document.getElementsByClassName("message")[3].style =
@@ -171,6 +174,7 @@ const validate = () => {
         }
 
         if (zipVal == false) {
+            myZip.style.border = "1px solid red";
             document.getElementsByClassName("message")[4].innerHTML =
                 "Required.Must be numeric only.";
             document.getElementsByClassName("message")[4].style =
@@ -180,6 +184,7 @@ const validate = () => {
         }
 
         if (emailValid == false) {
+            myMail.style.border = "1px solid red";
             document.getElementsByClassName("message")[5].innerHTML =
                 "Required.Must be a valid email.";
             document.getElementsByClassName("message")[5].style =
