@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="regist.css">
+</head>
+<!-- Creating a registration form with different input types for
+    a user to input the required data before registering -->
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form class="myForm" id="the-form" action="userdetails" method="POST">           
+            <div class="myForm">
+                <label for="userId">User id:</label>
+                <input id="userId" type="text" name="userId">
+            </div>
+
+            <div class="myForm">
+                <label for="passw">Password:</label>
+                <input id="passw" type="password" name="password">
+            </div>
+
+            <div class="myForm">
+                <label for="nme">Name:</label>
+                <input id="nme" type="text" name="nam">
+            </div>
+
+            <div class="myForm">
+                <label for="addre">Address:</label>
+                <input id="addre" type="text" name="address">
+            </div>
+
+            <div class="myForm" id="mySelect">
+                <label for="selct">Country:</label>
+                <select id="selector" name="myselect" class="required">
+                    <option value="0" id="selct">(Please select a country)</option>
+                    <option value="1" id="selct">Uganda</option>
+                    <option value="2" id="selct">Kenya</option>
+                </select>
+            </div>
+
+            <div class="myForm">
+                <label for="zip">ZIP Code:</label>
+                <input id="zip" type="text" name="zipCode">
+            </div>
+
+            <div class="myForm">
+                <label for="mail">Email:</label>
+                <input id="mail" type="email" name="email">
+            </div>
+
+            <!-- Radio buttons for a user to select either male or f
+                emale during registration -->
+            <div class="mychoice">
+                <label for="choice">Sex:</label>
+                <input id="man" type="radio" name="myRadios" value="Male" required/>Male
+                <input id="man"  type="radio" name="myRadios" value="Female"/>Female
+            </div>
+
+            <!-- Check boxes for a user to select where they use 
+                English or non English -->
+            <div class="mychoice" required>
+                <label for="check">Language:</label>
+                <input type="checkbox" name="myChecks" value="english">English
+                <input type="checkbox" name="myChecks" value="non english">Non English
+            </div>
+
+            <!-- Text box for a user to any comments or notes of their choice -->
+            <div class="myText">
+                <label for="textBox">About:</label>
+                <textarea id="notes" name="notes" rows="10" cols="20" maxlength="300"></textarea>
+            </div>
+
+            <!-- Submit button for the user to submit a fully filled form -->
+            <div class="sub">
+                <button id="submt" type="submit" name="submit">Submit</button>
+            </div>
+        </form>
+        <!-- Javascript file to validate the required user inputs -->
+    </div>
+    <script src="regist.js"></script>
+</body>
+
+</html>
