@@ -1,22 +1,30 @@
 <!DOCTYPE html>
+<!-- Setting the language of the document to english -->
 <html lang="en">
-
+<!-- The head of the document -->
 <head>
+    <!-- meta tag specifying UTF-8 as the character set with which this document is written. -->
     <meta charset="UTF-8">
+    <!-- meta tag specifying that view point will fit on the width of the device used to view this document -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta tag that allows to choose what version of Internet Explorer the page should be rendered as -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- This is the title that appears on the browsers tab -->
     <title>Registration Form</title>
+    <!-- linking the external file containing the css -->
     <link rel="stylesheet" type="text/css" href="regist.css">
 </head>
-<!-- Creating a registration form with different input types for
-    a user to input the required data before registering -->
+<!-- Start of the body of the document -->
 <body>
+    <!-- Start of main div of the document -->
     <div class="container">
+        <!-- Title of the form -->
         <h1>Registration Form</h1>
-        <form class="myForm" id="the-form" action="#">           
+        <!-- Creating a registration form with different labels and input fields organised in divs -->
+        <form class="myForm" id="the-form" action="userdetails" method="POST">           
             <div class="myForm">
                 <label for="userId">User id:</label>
-                <input id="userId" type="text" name="user-id">
+                <input id="userId" type="text" name="userId">
                 <span class="message"></span>
             </div>
 
@@ -83,14 +91,17 @@
                 <textarea id="notes" name="notes" rows="10" cols="20" maxlength="300"></textarea>
             </div>
 
-            <!-- Submit button for the user to submit a fully filled form -->
+            <!-- Submit button for the user to submit the form -->
             <div class="sub">
                 <button id="submt" type="submit" name="submit">Submit</button>
             </div>
+            <!-- End of the registration form -->
         </form>
-        <!-- Javascript file to validate the required user inputs -->
+        <!-- End of main div of the document -->
     </div>
+    <!-- Linking the external Javascript file to validate the required user inputs -->
     <script src="regist.js"></script>
+    <!-- End of the body of the document -->
 </body>
-
+<!-- End of the html file -->
 </html>

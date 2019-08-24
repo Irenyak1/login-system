@@ -1,4 +1,4 @@
-/* Styling the body of the registration form, login form and the home page */
+/* Styling the body of the registration form, login form and the index page */
 body{
     background-color: rgb(62, 161, 128);
     margin: 0%;
@@ -50,18 +50,20 @@ label[for="textBox"]{
   width: 75px;
   font-size: 18px;
 }
-
-.login-form {
+/* Styling the elements with class name login-form */
+.login-form{
   width: 300px;
   margin: 0 auto;
   font-family: Tahoma, Geneva, sans-serif;
 }
+/* Styling the h1 elements found in class name, login-form */
 .login-form h1 {
   text-align: center;
   color: #4d4d4d;
   font-size: 24px;
   padding: 20px 0 20px 0;
 }
+/* Styling the password and text type input fields found in element with class name, login-form */
 .login-form input[type="password"], 
 .login-form input[type="text"]{
   width: 100%;
@@ -71,6 +73,7 @@ label[for="textBox"]{
   box-sizing: border-box;
   border-radius: 5px;
 }
+/* Styling the submit and button type inputs found in element with class name, login-form */
 .login-form input[type="submit"],
 .login-form input[type="button"]{
   width: 100%;

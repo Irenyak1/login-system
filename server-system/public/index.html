@@ -1,23 +1,35 @@
 <!DOCTYPE html>
+<!-- Setting the language of the document to english -->
 <html lang="en">
+  <!-- The head of the document -->
   <head>
+    <!-- meta tag specifying UTF-8 as the character set with which this document is written. -->
     <meta charset="UTF-8" />
+    <!-- This is the title that appears on the browsers tab -->
     <title>KYK</title>
+     <!-- linking the external file containing the css -->
     <link rel="stylesheet" type="text/css" href="regist.css"/>      
   </head>
-  <!-- Creating a login form with username and password input types for
-    a user to input the required data before loging in -->
+  <!-- Start of the body of the document -->
   <body>
-    <div class="main">
+     <!-- Start of main div of the document -->
+     <div class="main">
+       <!-- Start of form div -->
       <div class="login-form">
+        <!-- Title of the form -->
         <h1>Landing Page</h1>
+        <!-- Start of form for Landing page -->
         <form action="auth" method="POST">
             <input type="button" onclick= "window.location.href='/register';" value="Singup"/> 
             OR
-            <input type="button" onclick= "window.location.href='/login';" value="Login" />        
+            <input type="button" onclick= "window.location.href='/login';" value="Login" /> 
+            <!-- End of form        -->
         </form>
+        <!-- End of form div -->
       </div>
+      <!-- End of parent div -->
     </div>
     <!-- <script src="regist.js"></script> -->
   </body>
+  <!-- Close of html tag -->
 </html>
