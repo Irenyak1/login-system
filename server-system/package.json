@@ -1,15 +1,33 @@
 {
   "name": "login-system",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A system for capturing user information",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
-  "author": "",
+  "author": "Irene Nyakate",
   "license": "ISC",
   "dependencies": {
-    "express-session": "^1.16.2",
-    "mysql": "^2.17.1"
-  }
+    "body-parser": "^1.19.0",
+    "crypto": "^1.0.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Irenyak1/login-system.git"
+  },
+  "keywords": [
+    "login-system"
+  ],
+  "bugs": {
+    "url": "https://github.com/Irenyak1/login-system/issues"
+  },
+  "homepage": "https://github.com/Irenyak1/login-system#readme"
 }

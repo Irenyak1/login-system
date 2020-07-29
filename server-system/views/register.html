@@ -2,6 +2,7 @@
 <!-- Setting the language of the document to english -->
 <html lang="en">
 <!-- The head of the document -->
+
 <head>
     <!-- meta tag specifying UTF-8 as the character set with which this document is written. -->
     <meta charset="UTF-8">
@@ -12,16 +13,22 @@
     <!-- This is the title that appears on the browsers tab -->
     <title>Registration Form</title>
     <!-- linking the external file containing the css -->
-    <link rel="stylesheet" type="text/css" href="regist.css">
+    <link rel="stylesheet" type="text/css" href="/regist.css">
+    <!-- <script src="/register.js"></script> -->
 </head>
 <!-- Start of the body of the document -->
+<!-- <body onload="document.registration.userId.focus();"> -->
+
 <body>
     <!-- Start of main div of the document -->
     <div class="container">
         <!-- Title of the form -->
         <h1>Registration Form</h1>
         <!-- Creating a registration form with different labels and input fields organised in divs -->
-        <form class="myForm" id="the-form" action="userdetails" method="POST">           
+        <!-- <form class="myForm" id="the-form" action="/userdetails" method="POST" onsubmit="Validate(); return false"> -->
+        <form name='registration' class="myForm" id="the-form" action="userdetails" method="POST"
+            onsubmit="return Validate();">
+            <!-- <form class="myForm" id="the-form" action="/userdetails" method="POST"> -->
             <div class="myForm">
                 <label for="userId">User id:</label>
                 <input id="userId" type="text" name="userId">
@@ -71,8 +78,10 @@
                 emale during registration -->
             <div class="mychoice">
                 <label for="choice">Sex:</label>
-                <input id="mal" type="radio" name="myRadios" value="Male"/>Male
-                <input id="femal"  type="radio" name="myRadios" value="Female"/>Female
+                <!-- <input id="mal" type="radio" name="myRadios" value="Male" />Male
+                <input id="femal" type="radio" name="myRadios" value="Female" />Female -->
+                <input id="mal" type="radio" name="myRadios" value="Male" />Male
+                <input id="femal" type="radio" name="myRadios" value="Female" />Female
                 <span class="message"></span>
             </div>
 
@@ -80,6 +89,8 @@
                 English or non English -->
             <div class="mychoice" required>
                 <label for="check">Language:</label>
+                <!-- <input id="eng" type="checkbox" name="myChecks" value="english">English
+                <input id="non-eng" type="checkbox" name="myChecks" value="non english">Non English -->
                 <input id="eng" type="checkbox" name="myChecks" value="english">English
                 <input id="non-eng" type="checkbox" name="myChecks" value="non english">Non English
                 <span class="message"></span>
@@ -94,14 +105,16 @@
             <!-- Submit button for the user to submit the form -->
             <div class="sub">
                 <button id="submt" type="submit" name="submit">Submit</button>
+
             </div>
             <!-- End of the registration form -->
         </form>
         <!-- End of main div of the document -->
     </div>
     <!-- Linking the external Javascript file to validate the required user inputs -->
-    <script src="regist.js"></script>
+    <script src="/register.js"></script>
     <!-- End of the body of the document -->
 </body>
 <!-- End of the html file -->
+
 </html>
