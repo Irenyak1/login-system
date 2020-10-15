@@ -247,4 +247,4 @@ const validate = () => {
 };
 
 //Invoking the validate function.
-validate();
+// validate();

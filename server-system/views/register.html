@@ -13,7 +13,7 @@
     <!-- This is the title that appears on the browsers tab -->
     <title>Registration Form</title>
     <!-- linking the external file containing the css -->
-    <link rel="stylesheet" type="text/css" href="/regist.css">
+    <link rel="stylesheet" type="text/css" href="../public/regist.css">
     <!-- <script src="/register.js"></script> -->
 </head>
 <!-- Start of the body of the document -->
@@ -50,18 +50,25 @@
             <div class="myForm">
                 <label for="addre">Address:</label>
                 <input id="addre" type="text" name="address">
+                <span class="message"></span>
             </div>
 
             <div class="myForm" id="mySelect">
                 <label for="selct">Country:</label>
                 <select id="selector" name="myselect">
-                    <option value="0" id="selct" name="select">(Please select a country)</option>
-                    <option value="1" id="selct" name="select">Uganda</option>
-                    <option value="2" id="selct" name="select">Kenya</option>
+                    <option selected="" value="Default">(Please select a country)</option>
+                    <!-- <option value="0" id="selct" name="select">(Please select a country)</option> -->
+                    <!-- <option value="1" id="selct" name="select">Uganda</option> -->
+                    <option value="1">Uganda</option>
+                    <option value="2">Kenya</option>
+                    <option value="3">Australia</option>
+                    <option value="4">Canada</option>
+                    <option value="5">India</option>
+                    <option value="6">Russia</option>
+                    <option value="7">USA</option>
                 </select>
                 <span class="message"></span>
             </div>
-
             <div class="myForm">
                 <label for="zip">ZIP Code:</label>
                 <input id="zip" type="text" name="zipCode">
@@ -78,8 +85,8 @@
                 emale during registration -->
             <div class="mychoice">
                 <label for="choice">Sex:</label>
-                <!-- <input id="mal" type="radio" name="myRadios" value="Male" />Male
-                <input id="femal" type="radio" name="myRadios" value="Female" />Female -->
+                <!-- <input id="mal" type="radio" name="msex" value="Male" />Male
+                <input id="femal" type="radio" name="fsex" value="Female" />Female -->
                 <input id="mal" type="radio" name="myRadios" value="Male" />Male
                 <input id="femal" type="radio" name="myRadios" value="Female" />Female
                 <span class="message"></span>
@@ -89,8 +96,8 @@
                 English or non English -->
             <div class="mychoice" required>
                 <label for="check">Language:</label>
-                <!-- <input id="eng" type="checkbox" name="myChecks" value="english">English
-                <input id="non-eng" type="checkbox" name="myChecks" value="non english">Non English -->
+                <!-- <input id="eng" type="checkbox" name="eng" value="english">English
+                <input id="non-eng" type="checkbox" name="noneng" value="non english">Non English -->
                 <input id="eng" type="checkbox" name="myChecks" value="english">English
                 <input id="non-eng" type="checkbox" name="myChecks" value="non english">Non English
                 <span class="message"></span>
@@ -112,7 +119,7 @@
         <!-- End of main div of the document -->
     </div>
     <!-- Linking the external Javascript file to validate the required user inputs -->
-    <script src="/register.js"></script>
+    <script src="../public/register.js"></script>
     <!-- End of the body of the document -->
 </body>
 <!-- End of the html file -->
